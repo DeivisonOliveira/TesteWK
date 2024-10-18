@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/10/16 13:04:09.000.550,=D:\Projetos\Unit1.pas</Transaction>
+    <Transaction>2024/10/16 13:04:57.000.573,D:\Projetos\Unit1.pas=D:\Projetos\TesteWK\src\View\Pages\TesteWK.View.Pages.PedidoVenda.pas</Transaction>
+    <Transaction>2024/10/16 13:04:57.000.573,D:\Projetos\Unit1.dfm=D:\Projetos\TesteWK\src\View\Pages\TesteWK.View.Pages.PedidoVenda.dfm</Transaction>
+    <Transaction>2024/10/16 13:05:18.000.489,D:\Projetos\Project1.dproj=D:\Projetos\TesteWK\src\TesteWK.dproj</Transaction>
+    <Transaction>2024/10/16 13:16:49.000.052,=D:\Projetos\TesteWK\src\Unit1.pas</Transaction>
+    <Transaction>2024/10/16 13:17:55.000.870,D:\Projetos\TesteWK\src\Unit1.pas=D:\Projetos\TesteWK\src\Model\Components\Connection\TesteWK.Model.Components.Connection.FireDAC.pas</Transaction>
+    <Transaction>2024/10/16 13:17:55.000.870,D:\Projetos\TesteWK\src\Unit1.dfm=D:\Projetos\TesteWK\src\Model\Components\Connection\TesteWK.Model.Components.Connection.FireDAC.dfm</Transaction>
+    <Transaction>2024/10/16 14:17:21.000.783,=D:\Projetos\TesteWK\src\Unit1.pas</Transaction>
+    <Transaction>2024/10/16 14:19:04.000.245,D:\Projetos\TesteWK\src\Unit1.pas=D:\Projetos\TesteWK\src\Model\Entities\TesteWK.Model.Entities.Clientes.pas</Transaction>
+    <Transaction>2024/10/16 14:27:32.000.107,=D:\Projetos\TesteWK\src\Unit1.pas</Transaction>
+    <Transaction>2024/10/16 14:28:16.000.412,D:\Projetos\TesteWK\src\Unit1.pas=D:\Projetos\TesteWK\src\Model\DAO\TesteWK.Model.DAO.Clientes.pas</Transaction>
+    <Transaction>2024/10/16 15:14:13.000.002,=D:\Projetos\TesteWK\src\Unit1.pas</Transaction>
+    <Transaction>2024/10/16 15:15:51.000.461,D:\Projetos\TesteWK\src\Unit1.pas=D:\Projetos\TesteWK\src\Model\Behaviors\TesteWK.Model.Behaviors.pas</Transaction>
+    <Transaction>2024/10/16 15:31:39.000.552,=D:\Projetos\TesteWK\src\Unit1.pas</Transaction>
+    <Transaction>2024/10/16 15:31:53.000.321,D:\Projetos\TesteWK\src\Unit1.pas=D:\Projetos\TesteWK\src\Model\DAO\TesteWK.Model.DAO.Produtos.pas</Transaction>
+    <Transaction>2024/10/17 01:04:40.000.075,=D:\Projetos\TesteWK\src\Unit1.pas</Transaction>
+    <Transaction>2024/10/17 01:04:57.000.087,D:\Projetos\TesteWK\src\Unit1.pas=D:\Projetos\TesteWK\src\Model\DAO\TesteWK.Model.DAO.Pedido.pas</Transaction>
+    <Transaction>2024/10/17 01:14:46.000.373,=D:\Projetos\TesteWK\src\Unit1.pas</Transaction>
+    <Transaction>2024/10/17 01:15:10.000.655,D:\Projetos\TesteWK\src\Unit1.pas=D:\Projetos\TesteWK\src\Model\DAO\TesteWK.Model.DAO.Interfaces.pas</Transaction>
+    <Transaction>2024/10/17 01:17:46.000.911,=D:\Projetos\TesteWK\src\Unit1.pas</Transaction>
+    <Transaction>2024/10/17 01:17:58.000.356,D:\Projetos\TesteWK\src\Unit1.pas=D:\Projetos\TesteWK\src\Model\Entities\TesteWK.Model.Entities.Pedido.pas</Transaction>
+    <Transaction>2024/10/17 01:41:23.000.090,D:\Projetos\TesteWK\src\Model\DAO\TesteWK.Model.DAO.Interfaces.pas=</Transaction>
+    <Transaction>2024/10/17 09:56:56.000.108,=D:\Projetos\TesteWK\src\Unit1.pas</Transaction>
+    <Transaction>2024/10/17 09:57:08.000.583,D:\Projetos\TesteWK\src\Model\DAO\TesteWK.Model.DAO.PedidoProduto.pas=D:\Projetos\TesteWK\src\Unit1.pas</Transaction>
+    <Transaction>2024/10/18 14:50:49.457,D:\Projetos\TesteWK\src\Model\Entities\TesteWK.Model.Entities.Clientes.pas=</Transaction>
+    <Transaction>2024/10/18 14:51:25.712,=D:\Projetos\TesteWK\src\Model\Entities\TesteWK.Model.Entities.Clientes.pas</Transaction>
+    <Transaction>2024/10/18 14:52:11.240,D:\Projetos\TesteWK\src\Model\Entities\TesteWK.Model.Entities.Clientes.pas=</Transaction>
+  </Transactions>
+</BorlandProject>
