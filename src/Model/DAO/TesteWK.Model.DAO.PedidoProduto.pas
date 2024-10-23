@@ -41,6 +41,7 @@ end;
 
 procedure TModelDAOPedidoProduto.Insert(aNumeroPedido : Integer; aDataSource : TDataSource);
 begin
+  // o StartTransaction já foi dado na PEDIDO
   try
     DataModule1.FDQuery.Close;
     DataModule1.FDQuery.SQL.Clear;

@@ -720,6 +720,7 @@ object PagePedidoVenda: TPagePedidoVenda
             TitleFont.Name = 'Segoe UI'
             TitleFont.Style = []
             OnKeyDown = DBGrid1KeyDown
+            OnTitleClick = DBGrid1TitleClick
             Columns = <
               item
                 Expanded = False

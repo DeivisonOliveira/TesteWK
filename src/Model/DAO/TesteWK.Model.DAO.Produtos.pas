@@ -39,16 +39,12 @@ function TModelDAOProdutos.GetDescricaoProduto(aParam: Integer): string;
 begin
   DataModule1.FDConnection.StartTransaction;
   try
-    DataModule1.FDQuery.Close;
-    DataModule1.FDQuery.SQL.Clear;
-    DataModule1.FDQuery.SQL.Add('SELECT DESCRICAO FROM PRODUTOS WHERE CODIGO = :CODIGO');
-    DataModule1.FDQuery.ParamByName('CODIGO').AsInteger := aParam;
-    DataModule1.FDQuery.Open;
+    Result := DataModule1.FDConnection.ExecSQLScalar('SELECT DESCRICAO FROM PRODUTOS WHERE CODIGO = :CODIGO', [aParam]);
 
-    if DataModule1.FDQuery.IsEmpty then
+    if Result.IsEmpty then
       MessageDlg('Produto não encontrado!', TMsgDlgType.mtWarning, [TMsgDlgBtn.mbOK], 0);
 
-    Result := DataModule1.FDQuery.FieldByName('DESCRICAO').AsString;
+    DataModule1.FDConnection.Commit;
   except
     on E: Exception do
     begin

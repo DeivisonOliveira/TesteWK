@@ -65,6 +65,7 @@ end;
 
 procedure TModelDAOPedido.Delete(aNumeroPedido: Integer);
 begin
+  // o StartTransaction já foi dado na PEDIDO_PRODUTO
   try
     DataModule1.FDQuery.Close;
     DataModule1.FDQuery.SQL.Clear;
@@ -117,11 +118,7 @@ function TModelDAOPedido.GetNumeroPedido: Integer;
 begin
   DataModule1.FDConnection.StartTransaction;
   try
-    DataModule1.FDQuery.Close;
-    DataModule1.FDQuery.SQL.Clear;
-    DataModule1.FDQuery.SQL.Add('SELECT MAX(NUMERO_PEDIDO) AS NUMERO_PEDIDO FROM PEDIDO');
-    DataModule1.FDQuery.Open;
-    Result := DataModule1.FDQuery.FieldByName('NUMERO_PEDIDO').AsInteger + 1;
+    Result := DataModule1.FDConnection.ExecSQLScalar('SELECT MAX(NUMERO_PEDIDO) AS NUMERO_PEDIDO FROM PEDIDO') + 1;
     DataModule1.FDConnection.Commit;
   except
     on E: Exception do

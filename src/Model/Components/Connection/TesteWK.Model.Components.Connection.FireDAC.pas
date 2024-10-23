@@ -47,10 +47,8 @@ type
     FDGUIxWaitCursor: TFDGUIxWaitCursor;
     FDQuery: TFDQuery;
     procedure DataModuleCreate(Sender: TObject);
-    procedure DataModuleDestroy(Sender: TObject);
   private
     { Private declarations }
-    FConfigDB: TConfigDB;
     procedure Carrega_Arquivo_Ini;
   public
     { Public declarations }
@@ -71,8 +69,6 @@ uses
 
 procedure TDataModule1.DataModuleCreate(Sender: TObject);
 begin
-  FConfigDB := TConfigDB.Create;
-
   Carrega_Arquivo_Ini;
 
   try
@@ -90,10 +86,12 @@ end;
 
 procedure TDataModule1.Carrega_Arquivo_Ini;
 var
+  FConfigDB: TConfigDB;
   vConfigFile: TIniFile;
 const
   CONFIG_DB: string = 'CONFIG_DB';
 begin
+  FConfigDB := TConfigDB.Create;
   FConfigDB.Diretorio := ExtractFilePath(Application.ExeName);
   FConfigDB.Arquivo := FConfigDB.Diretorio + 'TesteWK.ini';
 
@@ -123,13 +121,9 @@ begin
     vConfigFile.ReadSectionValues(CONFIG_DB, FDConnection.Params);
     FDPhysMySQLDriverLink.VendorLib := FConfigDB.VendorLib;
   finally
-    FreeAndNil(vConfigFile);
+    vConfigFile.Free;
+    FConfigDB.Free;
   end;
-end;
-
-procedure TDataModule1.DataModuleDestroy(Sender: TObject);
-begin
-  FConfigDB.Free;
 end;
 
 end.

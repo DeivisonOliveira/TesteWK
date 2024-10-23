@@ -112,6 +112,7 @@ type
     procedure DBEditCodigoProdutoExit(Sender: TObject);
     procedure btBuscarPedidoClick(Sender: TObject);
     procedure btCancelarPedidoClick(Sender: TObject);
+    procedure DBGrid1TitleClick(Column: TColumn);
   private
     { Private declarations }
     FDAOClientes : TModelDAOClientes;
@@ -268,6 +269,14 @@ begin
   end;
 end;
 
+procedure TPagePedidoVenda.DBGrid1TitleClick(Column: TColumn);
+begin
+  if TablePedidoProduto.IndexFieldNames = Column.FieldName then
+    TablePedidoProduto.IndexFieldNames := Column.FieldName + ':D'
+  else
+    TablePedidoProduto.IndexFieldNames := Column.FieldName;
+end;
+
 procedure TPagePedidoVenda.DBGrid1KeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
@@ -301,10 +310,10 @@ end;
 
 procedure TPagePedidoVenda.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
-  TablePedido.Close;
-  TablePedido.Free;
   TablePedidoProduto.Close;
+  TablePedido.Close;
   TablePedidoProduto.Free;
+  TablePedido.Free;
 end;
 
 end.
